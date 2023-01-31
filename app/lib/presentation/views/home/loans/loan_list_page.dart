@@ -40,7 +40,7 @@ final sortedLoanListProvider =
           } else if (a.returnDate != null && b.returnDate == null) {
             return 1;
           } else {
-            return a.expectedReturnDate.compareTo(b.expectedReturnDate);
+            return a.expectedReturnDate!.compareTo(b.expectedReturnDate!);
           }
         });
         break;
@@ -281,7 +281,7 @@ class _LoanExpectedReturn extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = ref.watch(localizationProvider);
     final loan = ref.watch(_currentLoan);
-    final daysLeft = loan.expectedReturnDate.difference(DateTime.now()).inDays;
+    final daysLeft = loan.expectedReturnDate!.difference(DateTime.now()).inDays;
     final textColor = (daysLeft <= 0
         ? Colors.red
         : (daysLeft < 4 ? Colors.orange : Colors.green));

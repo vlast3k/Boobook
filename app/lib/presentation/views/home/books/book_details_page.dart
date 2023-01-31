@@ -1,4 +1,4 @@
-import 'package:avatar/avatar.dart';
+import 'package:boobook/avatar/avatar.dart';
 import 'package:boobook/models/book.dart';
 import 'package:boobook/models/loan.dart';
 import 'package:boobook/presentation/common_widgets/empty_data.dart';

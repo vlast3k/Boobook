@@ -48,9 +48,9 @@ class SubscriptionPage extends ConsumerWidget {
             : null,
       ),
       body: SubscriptionPageContents(
-        hasStoreIssue: state.isReady && state.price == null,
-        isPurchasing: state.isLoading,
-      ),
+          // hasStoreIssue: state.isReady && state.price == null,
+          // isPurchasing: state.isLoading,
+          ),
     );
   }
 }
@@ -270,7 +270,8 @@ class _SubscriptionPriceSection extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = ref.read(localizationProvider);
     final appTheme = ref.watch(appThemeProvider);
-    final price = ref.watch(purchasesControllerProvider).price;
+    final price = 0;
+    //ref.watch(purchasesControllerProvider).price;
 
     return Container(
       height: 65,
@@ -280,7 +281,7 @@ class _SubscriptionPriceSection extends ConsumerWidget {
       ),
       child: price != null
           ? Text(
-              l10n.subscriptionPrice(price),
+              "missingff", //l10n.subscriptionPrice(price),
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.w600,
@@ -311,7 +312,7 @@ class _SubscriptionPurchaseButton extends ConsumerWidget {
         title: l10n.subscriptionButton,
         onPressed: isPurchasing
             ? null
-            : () => _handleEvent(ref, PurchasesEvent.purchase()),
+            : null, //() => _handleEvent(ref, PurchasesEvent.purchase()),
       ),
     );
   }

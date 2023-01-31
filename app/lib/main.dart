@@ -13,7 +13,7 @@ import 'package:layout_builder/layout_builder.dart'
     show PlatformApp, appThemeProvider;
 import 'package:localization/localization.dart';
 import 'package:purchases/purchases.dart';
-import 'package:sign_in/sign_in.dart';
+import 'package:boobook/sign_in/sign_in.dart';
 import 'firebase_options.dart';
 
 void main() async {

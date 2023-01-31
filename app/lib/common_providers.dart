@@ -6,7 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:localization/localization.dart';
 import 'package:purchases/purchases.dart';
-import 'package:sign_in/sign_in.dart';
+import 'package:boobook/sign_in/sign_in.dart';
 
 /// A provider which listens to the user document in the database
 /// Returns a [User] object (which may not be confused with the Firebase

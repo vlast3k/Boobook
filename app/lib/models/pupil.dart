@@ -1,4 +1,4 @@
-import 'package:avatar/avatar.dart';
+import 'package:boobook/avatar/avatar.dart';
 import 'package:extensions/extensions.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
@@ -9,7 +9,7 @@ part 'pupil.g.dart';
 class Pupil with _$Pupil {
   const Pupil._();
 
-  @JsonSerializable(explicitToJson: true, includeIfNull: false)
+  @JsonSerializable(explicitToJson: true)
   factory Pupil({
     String? id,
     @Default("") String firstName,

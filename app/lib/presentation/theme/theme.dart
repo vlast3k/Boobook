@@ -2,7 +2,7 @@ import 'package:boobook/common_providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:layout_builder/layout_builder.dart';
-import 'package:sign_in/sign_in.dart';
+import 'package:boobook/sign_in/sign_in.dart';
 
 final brightnessProvider = Provider<Brightness>((ref) {
   return ref.watch(userProvider.select((user) {
@@ -50,23 +50,23 @@ final boobookTheme = Provider<AppTheme>((ref) {
   }
 
   return AppTheme(
-    brightness: brightness,
-    primaryColor: Color(0xFF6DA548), //Color(0xFF43A047),
-    secondaryColor: Color(0xFFF4C946),
-    scaffoldBackgroundColor: scaffoldBackgroundColor,
-    groupedListBackgroundColor: groupedListBackgroundColor,
-    materialSystemBarColor: Color(0xFFEEEEEE),
-    navigationBarBackgroundColor: Color(0xFF6da548),
-    navigationBarBorderColor: navigationBarBorderColor,
-    elevatedButtonPadding: 12,
-    elevatedButtonRadius: 10,
-    listTileBackground: listTileBackground,
-    textColor: textColor,
-    selectedColor: selectedColor,
-    borderColor: Color(0xFFBDBDBD),
-    dividerColor: dividerColor,
-    shadowColor: shadowColor,
-  );
+      brightness: brightness,
+      primaryColor: Color(0xFF6DA548), //Color(0xFF43A047),
+      secondaryColor: Color(0xFFF4C946),
+      scaffoldBackgroundColor: scaffoldBackgroundColor,
+      groupedListBackgroundColor: groupedListBackgroundColor,
+      materialSystemBarColor: Color(0xFFEEEEEE),
+      navigationBarBackgroundColor: Color(0xFF6da548),
+      navigationBarBorderColor: navigationBarBorderColor,
+      elevatedButtonPadding: 12,
+      elevatedButtonRadius: 10,
+      listTileBackground: listTileBackground,
+      textColor: textColor,
+      selectedColor: selectedColor,
+      borderColor: Color(0xFFBDBDBD),
+      dividerColor: dividerColor,
+      shadowColor: shadowColor,
+      disclosureIndicatorColor: Color(0xFFBDBDBD));
 });
 
 final boobookSignInTheme = Provider<SignInTheme>((ref) {

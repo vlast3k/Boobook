@@ -1,4 +1,4 @@
-import 'package:avatar/avatar.dart';
+import 'package:boobook/avatar/avatar.dart';
 import 'package:boobook/controllers/pupil_form_controller.dart';
 import 'package:boobook/models/pupil.dart';
 import 'package:boobook/presentation/views/home/pupils/pupil_list_page.dart';
@@ -8,7 +8,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:layout_builder/layout_builder.dart';
-import 'package:photo_upload/upload.dart';
+import 'package:boobook/photo_upload/upload.dart';
 
 final pupilControllerProvider = StateNotifierProvider.family
     .autoDispose<PupilFormController, PupilFormState, String>((ref, id) {

@@ -3,7 +3,7 @@ import 'package:boobook/models/pupil.dart';
 import 'package:boobook/common_providers.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:extensions/extensions.dart';
-import 'package:firestore_service/firestore_service.dart';
+import 'package:boobook/firestore_service/firestore_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
@@ -20,9 +20,9 @@ class Loan with _$Loan {
     Book? book,
     bool? isNewLoan,
     @Default(false) bool isLost,
-    @TimestampConverter() required DateTime loanDate,
-    @TimestampConverter() required DateTime expectedReturnDate,
-    @NullableTimestampConverter() DateTime? returnDate,
+    DateTime? loanDate,
+    DateTime? expectedReturnDate,
+    DateTime? returnDate,
   }) = _Loan;
 
   factory Loan.fromJson(Map<String, dynamic> json) => _$LoanFromJson(json);
@@ -47,11 +47,11 @@ extension LoanX on Loan {
     final l10n = ref.watch(localizationProvider);
     if (returnDate != null) {
       return l10n.bookLoanFromTo(
-          loanDate.toLocaleDate(context), returnDate!.toLocaleDate(context));
+          loanDate!.toLocaleDate(context), returnDate!.toLocaleDate(context));
     } else if (isLost) {
       return l10n.bookLost;
     } else {
-      return l10n.bookLoanSince(loanDate.toLocaleDate(context));
+      return l10n.bookLoanSince(loanDate!.toLocaleDate(context));
     }
   }
 }

@@ -1,5 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firestore_service/firestore_service.dart';
+import 'package:boobook/firestore_service/firestore_service.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:intl/intl.dart';
 //import 'package:isbndb/isbndb.dart' as isbn_db;
@@ -9,12 +9,12 @@ part 'book.g.dart';
 
 @freezed
 class Book with _$Book {
-  @JsonSerializable(explicitToJson: true, includeIfNull: false)
+  @JsonSerializable(explicitToJson: true)
   factory Book({
     @Default("") String title,
     String? isbn,
     @Default("") String isbn13,
-    @NullableTimestampConverter() DateTime? datePublished,
+    DateTime? datePublished,
     String? publisher,
     int? pages,
     String? imageUrl,

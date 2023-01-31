@@ -1,4 +1,4 @@
-import 'package:avatar/avatar.dart';
+import 'package:boobook/avatar/avatar.dart';
 import 'package:boobook/models/pupil.dart';
 import 'package:boobook/presentation/common_widgets/empty_data.dart';
 import 'package:boobook/presentation/common_widgets/pupil_card.dart';

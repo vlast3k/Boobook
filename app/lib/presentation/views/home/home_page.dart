@@ -54,7 +54,7 @@ class _HomePageState extends ConsumerState<HomePage>
 
     return ProviderScope(
       overrides: [
-        currentTabIndexProvider.overrideWithValue(StateController(0)),
+        // currentTabIndexProvider.overrideWithValue(StateController(0)),
         tabsProvider.overrideWithValue(
           [
             TabItem(
