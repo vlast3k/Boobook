@@ -156,7 +156,7 @@ class ScanController extends StateNotifier<ScanState> {
             //await isbnDb.getBook(barCode.code!);
 
             if (_book != null) {
-              book = Book.fromISBNdb(_book, id: bookRepository.newDocumentId);
+              //book = Book.fromISBNdb(_book, id: bookRepository.newDocumentId);
             }
           }
         } else {

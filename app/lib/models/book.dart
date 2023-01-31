@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firestore_service/firestore_service.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:intl/intl.dart';
-import 'package:isbndb/isbndb.dart' as isbn_db;
+//import 'package:isbndb/isbndb.dart' as isbn_db;
 
 part 'book.freezed.dart';
 part 'book.g.dart';
@@ -34,23 +34,23 @@ class Book with _$Book {
 
   factory Book.fromJson(Map<String, dynamic> json) => _$BookFromJson(json);
 
-  factory Book.fromISBNdb(
-    isbn_db.Book book, {
-    required String id,
-  }) =>
-      Book(
-        id: id,
-        title: book.title.split("(")[0].trim(),
-        isbn: book.isbn,
-        isbn13: book.isbn13,
-        datePublished: book.datePublished,
-        publisher: book.publisher,
-        pages: book.pages,
-        imageUrl: book.image,
-        synopsys: book.synopsys,
-        authors: book.authors ?? [],
-        isFromISBNdb: true,
-      );
+  // factory Book.fromISBNdb(
+  //   isbn_db.Book book, {
+  //   required String id,
+  // }) =>
+  //     Book(
+  //       id: id,
+  //       title: book.title.split("(")[0].trim(),
+  //       isbn: book.isbn,
+  //       isbn13: book.isbn13,
+  //       datePublished: book.datePublished,
+  //       publisher: book.publisher,
+  //       pages: book.pages,
+  //       imageUrl: book.image,
+  //       synopsys: book.synopsys,
+  //       authors: book.authors ?? [],
+  //       isFromISBNdb: true,
+  //     );
 
   factory Book.create({
     required String id,

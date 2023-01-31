@@ -12,7 +12,7 @@ import 'package:boobook/repositories/loan_repository.dart';
 import 'package:boobook/repositories/pupil_repository.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:isbndb/isbndb.dart';
+//import 'package:isbndb/isbndb.dart';
 import 'package:layout_builder/layout_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -25,7 +25,7 @@ final scanControllerProvider =
   final loanRepository = ref.watch(loanRepositoryProvider);
   final bookRepository = ref.watch(bookRepositoryProvider);
   final pupilRepository = ref.watch(pupilRepositoryProvider);
-  final isbndb = ISBNdb(isbnApiKey);
+  //final isbndb = ISBNdb(isbnApiKey);
   final maxSimultaneousLoans = ref.watch(
     userProvider.select((user) => user!.maxSimultaneousLoans),
   );
@@ -34,7 +34,6 @@ final scanControllerProvider =
     loanRepository,
     bookRepository,
     pupilRepository,
-    isbndb,
     maxSimultaneousLoans,
   );
 });
