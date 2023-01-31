@@ -4,7 +4,7 @@ import 'package:boobook/models/pupil.dart';
 import 'package:boobook/repositories/user_repository.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
-import 'package:firestore_service/firestore_service.dart';
+import 'package:boobook/firestore_service/firestore_service.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 final pupilRefProvider = Provider<CollectionReference<Pupil>>((ref) {

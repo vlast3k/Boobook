@@ -307,11 +307,11 @@ class _LoanFormGeneralSectionState
         ),
         FormTappableField(
           label: l10n.loanDate,
-          value: controller.loan.loanDate.toLocaleDate(context),
+          value: controller.loan.loanDate!.toLocaleDate(context),
           onPressed: () => showPlatformDatePicker(
             context,
             ref,
-            initialDate: controller.loan.loanDate,
+            initialDate: controller.loan.loanDate!,
             firstDate: firstDate,
             lastDate: lastDate,
             onChanged: (value) => _handleEvent(
@@ -322,11 +322,11 @@ class _LoanFormGeneralSectionState
         ),
         FormTappableField(
           label: l10n.loanExpectedReturn,
-          value: controller.loan.expectedReturnDate.toLocaleDate(context),
+          value: controller.loan.expectedReturnDate!.toLocaleDate(context),
           onPressed: () => showPlatformDatePicker(
             context,
             ref,
-            initialDate: controller.loan.expectedReturnDate,
+            initialDate: controller.loan.expectedReturnDate!,
             firstDate: firstDate,
             lastDate: lastDate,
             onChanged: (value) => _handleEvent(
