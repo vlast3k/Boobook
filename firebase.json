@@ -10,12 +10,7 @@
     ]
   },
   "hosting": {
-    "public": "website/dist",
-    "rewrites": [
-      { "source": "/privacy**", "destination": "/privacy.html" },
-      { "source": "/help**", "destination": "/help.html" },
-      { "source": "/auth/**", "dynamicLinks": true }
-    ],
+    "public": "app/build/web",
     "ignore": [
       "firebase.json",
       "**/.*",

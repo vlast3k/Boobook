@@ -7,7 +7,7 @@ import 'package:boobook/repositories/pupil_repository.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:isbndb/isbndb.dart' hide Book, $BookCopyWith;
+//import 'package:isbndb/isbndb.dart' hide Book, $BookCopyWith;
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 part 'scan_controller.freezed.dart';
@@ -52,14 +52,13 @@ class ScanController extends StateNotifier<ScanState> {
     this.loanRepository,
     this.bookRepository,
     this.pupilRepository,
-    this.isbnDb,
     this.maxSimultaneousLoans,
   ) : super(ScanState());
 
   LoanRepository loanRepository;
   BookRepository bookRepository;
   PupilRepository pupilRepository;
-  ISBNdb isbnDb;
+  //ISBNdb isbnDb;
   int maxSimultaneousLoans;
 
   void handleEvent(ScanEvent event) {
@@ -153,7 +152,8 @@ class ScanController extends StateNotifier<ScanState> {
           if (books.isNotEmpty) {
             book = books.first;
           } else {
-            final _book = await isbnDb.getBook(barCode.code!);
+            final _book = null;
+            //await isbnDb.getBook(barCode.code!);
 
             if (_book != null) {
               book = Book.fromISBNdb(_book, id: bookRepository.newDocumentId);

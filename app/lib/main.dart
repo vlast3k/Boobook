@@ -14,17 +14,20 @@ import 'package:layout_builder/layout_builder.dart'
 import 'package:localization/localization.dart';
 import 'package:purchases/purchases.dart';
 import 'package:sign_in/sign_in.dart';
+import 'firebase_options.dart';
 
 void main() async {
   await runZonedGuarded(() async {
     WidgetsFlutterBinding.ensureInitialized();
-    await Firebase.initializeApp();
-    FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+    //FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterError;
     runApp(ProviderScope(
       child: const BoobookApp(),
     ));
   }, (error, stackTrace) {
-    FirebaseCrashlytics.instance.recordError(error, stackTrace);
+    //FirebaseCrashlytics.instance.recordError(error, stackTrace);
   });
 }
 
@@ -36,11 +39,11 @@ class BoobookApp extends ConsumerWidget {
     return ProviderScope(
       overrides: [
         appThemeProvider.overrideWithProvider(boobookTheme),
-        purchasesSettingsProvider
-            .overrideWithProvider(boobookPurchasesSettings),
+        // // purchasesSettingsProvider
+        // //     .overrideWithProvider(boobookPurchasesSettings),
         authSettingsProvider.overrideWithProvider(boobookAuthSettingsProvider),
         signInThemeProvider.overrideWithProvider(boobookSignInTheme),
-        userLocaleProvider.overrideWithProvider(boobookUserLocaleProvider),
+        // userLocaleProvider.overrideWithProvider(boobookUserLocaleProvider),
       ],
       child: PlatformApp(
         navigatorKey: AppRouter.main,

@@ -29,8 +29,8 @@ class _HomePageState extends ConsumerState<HomePage>
   void initState() {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
-    final purchasesService = ref.read(purchasesServiceProvider);
-    purchasesService.setup();
+    // final purchasesService = ref.read(purchasesServiceProvider);
+    // purchasesService.setup();
   }
 
   @override
@@ -41,10 +41,10 @@ class _HomePageState extends ConsumerState<HomePage>
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    if (state == AppLifecycleState.resumed) {
-      final purchasesService = ref.read(purchasesServiceProvider);
-      purchasesService.refreshSubscription();
-    }
+    // if (state == AppLifecycleState.resumed) {
+    //   final purchasesService = ref.read(purchasesServiceProvider);
+    //   purchasesService.refreshSubscription();
+    // }
     ref.refresh(brightnessProvider);
   }
 
