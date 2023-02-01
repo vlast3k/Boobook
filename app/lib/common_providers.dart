@@ -4,8 +4,8 @@ import 'package:boobook/models/user.dart';
 import 'package:boobook/repositories/user_repository.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:localization/localization.dart';
-import 'package:purchases/purchases.dart';
+import 'package:boobook/localization/localization.dart';
+import 'package:boobook/purchases/purchases.dart';
 import 'package:boobook/sign_in/sign_in.dart';
 
 /// A provider which listens to the user document in the database

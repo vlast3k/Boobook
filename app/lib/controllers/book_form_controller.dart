@@ -1,6 +1,6 @@
 import 'package:boobook/models/book.dart';
 import 'package:boobook/repositories/book_repository.dart';
-import 'package:extensions/extensions.dart';
+import 'package:boobook/extensions/extensions.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 

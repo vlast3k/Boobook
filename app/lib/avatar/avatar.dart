@@ -3,9 +3,9 @@ library avatar;
 import 'dart:io';
 import 'dart:math';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:extensions/extensions.dart';
+import 'package:boobook/extensions/extensions.dart';
 import 'package:flutter/material.dart';
-import 'package:layout_builder/layout_builder.dart';
+import 'package:boobook/layout_builder/layout_builder.dart';
 
 part 'avatar_colors.dart';
 
