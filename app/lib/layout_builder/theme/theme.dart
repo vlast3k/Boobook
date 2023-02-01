@@ -2,17 +2,17 @@
 
 library theme;
 
-import 'package:extensions/extensions.dart';
+import 'package:boobook/extensions/extensions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:layout_builder/platform/platform.dart';
-import 'package:layout_builder/theme/material_color.dart';
-import 'package:layout_builder/l10n/layout_localizations.dart';
-import 'package:localization/localization.dart';
+import 'package:boobook/layout_builder/platform/platform.dart';
+import 'package:boobook/layout_builder/theme/material_color.dart';
+import 'package:boobook/layout_builder/l10n/layout_localizations.dart';
+import 'package:boobook/localization/localization.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'theme_providers.dart';

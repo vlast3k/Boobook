@@ -1,4 +1,4 @@
-import 'package:extensions/extensions.dart';
+import 'package:boobook/extensions/extensions.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'profile.freezed.dart';

@@ -9,10 +9,10 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:layout_builder/layout_builder.dart'
+import 'package:boobook/layout_builder/layout_builder.dart'
     show PlatformApp, appThemeProvider;
-import 'package:localization/localization.dart';
-import 'package:purchases/purchases.dart';
+import 'package:boobook/localization/localization.dart';
+import 'package:boobook/purchases/purchases.dart';
 import 'package:boobook/sign_in/sign_in.dart';
 import 'firebase_options.dart';
 

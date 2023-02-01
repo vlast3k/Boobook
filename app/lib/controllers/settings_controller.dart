@@ -2,8 +2,8 @@ import 'package:boobook/models/user.dart';
 import 'package:boobook/repositories/user_repository.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:layout_builder/settings/settings.dart';
-import 'package:layout_builder/theme/theme.dart';
+import 'package:boobook/layout_builder/settings/settings.dart';
+import 'package:boobook/layout_builder/theme/theme.dart';
 
 part 'settings_controller.freezed.dart';
 

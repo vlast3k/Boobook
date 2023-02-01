@@ -9,7 +9,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:layout_builder/layout_builder.dart';
+import 'package:boobook/layout_builder/layout_builder.dart';
 
 part 'upload_state.dart';
 part 'upload_controller.dart';

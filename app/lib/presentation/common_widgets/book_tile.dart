@@ -4,7 +4,7 @@ import 'package:boobook/common_providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
-import 'package:layout_builder/layout_builder.dart';
+import 'package:boobook/layout_builder/layout_builder.dart';
 
 final bookAvailableProvider = Provider<bool>((_) => true);
 

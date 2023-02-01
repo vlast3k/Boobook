@@ -12,7 +12,8 @@ import 'package:boobook/presentation/views/home/subscription/subscription_page.d
 import 'package:boobook/common_providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:layout_builder/layout_builder.dart' show platformPageRoute;
+import 'package:boobook/layout_builder/layout_builder.dart'
+    show platformPageRoute;
 
 class AppRouter {
   static final main = GlobalKey<NavigatorState>();

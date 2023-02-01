@@ -5,9 +5,9 @@
 import 'dart:async';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:modal_bottom_sheet/src/utils/scroll_to_top_status_bar.dart';
+import 'package:boobook/modal_bottom_sheet/src/utils/scroll_to_top_status_bar.dart';
 
-import 'package:modal_bottom_sheet/src/utils/bottom_sheet_suspended_curve.dart';
+import 'package:boobook/modal_bottom_sheet/src/utils/bottom_sheet_suspended_curve.dart';
 
 const Curve _decelerateEasing = Cubic(0.0, 0.0, 0.2, 1.0);
 const Curve _modalBottomSheetCurve = _decelerateEasing;
@@ -45,7 +45,7 @@ class ModalBottomSheet extends StatefulWidget {
     required this.expanded,
     required this.onClosing,
     required this.child,
-  })  : super(key: key);
+  }) : super(key: key);
 
   /// The closeProgressThreshold parameter
   /// specifies when the bottom sheet will be dismissed when user drags it.

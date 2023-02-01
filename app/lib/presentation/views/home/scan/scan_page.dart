@@ -13,7 +13,7 @@ import 'package:boobook/repositories/pupil_repository.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 //import 'package:isbndb/isbndb.dart';
-import 'package:layout_builder/layout_builder.dart';
+import 'package:boobook/layout_builder/layout_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';

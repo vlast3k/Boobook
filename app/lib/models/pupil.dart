@@ -1,5 +1,5 @@
 import 'package:boobook/avatar/avatar.dart';
-import 'package:extensions/extensions.dart';
+import 'package:boobook/extensions/extensions.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'pupil.freezed.dart';

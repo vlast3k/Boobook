@@ -10,10 +10,10 @@ import 'package:boobook/presentation/router/router.dart';
 import 'package:boobook/presentation/views/home/pupils/pupil_list_page.dart';
 import 'package:boobook/presentation/views/home/scan/scan_page.dart';
 import 'package:boobook/repositories/loan_repository.dart';
-import 'package:extensions/extensions.dart';
+import 'package:boobook/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:layout_builder/layout_builder.dart';
+import 'package:boobook/layout_builder/layout_builder.dart';
 
 enum LoanMode { add, edit }
 

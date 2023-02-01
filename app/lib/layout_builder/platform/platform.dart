@@ -2,18 +2,18 @@ library platform;
 
 import 'dart:async';
 
-import 'package:extensions/extensions.dart';
+import 'package:boobook/extensions/extensions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:layout_builder/form/form.dart';
-import 'package:layout_builder/layout_builder.dart'
+import 'package:boobook/layout_builder/form/form.dart';
+import 'package:boobook/layout_builder/layout_builder.dart'
     hide connectionStatusProvider, NetWorkError;
-import 'package:layout_builder/theme/theme.dart';
-import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
+import 'package:boobook/layout_builder/theme/theme.dart';
+import 'package:boobook/modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:numberpicker/numberpicker.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 

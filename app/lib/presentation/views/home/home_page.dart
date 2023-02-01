@@ -5,7 +5,7 @@ import 'package:boobook/common_providers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:layout_builder/layout_builder.dart'
+import 'package:boobook/layout_builder/layout_builder.dart'
     show
         PlatformIcons,
         PlatformTabNavigator,
@@ -14,7 +14,7 @@ import 'package:layout_builder/layout_builder.dart'
         currentTabIndexProvider,
         isCupertino,
         tabsProvider;
-import 'package:purchases/purchases.dart';
+import 'package:boobook/purchases/purchases.dart';
 
 class HomePage extends ConsumerStatefulWidget {
   const HomePage({Key? key}) : super(key: key);

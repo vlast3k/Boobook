@@ -2,7 +2,7 @@ import 'package:boobook/models/book.dart';
 import 'package:boobook/models/pupil.dart';
 import 'package:boobook/common_providers.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:extensions/extensions.dart';
+import 'package:boobook/extensions/extensions.dart';
 import 'package:boobook/firestore_service/firestore_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
