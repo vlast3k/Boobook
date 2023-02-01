@@ -125,7 +125,7 @@ class _SignInPhoneFormState extends ConsumerState<SignInPhoneForm> {
           keyboardType: TextInputType.phone,
           placeholder: state.country.exampleNumberMobileNational != null
               ? l10n.signInPhonePlaceholder(
-                  state.country.exampleNumberMobileNational!,
+                  state.country.exampleNumberMobileNational,
                 )
               : null,
           inputFormatters: [phoneNumberFormatter(state.country)],
